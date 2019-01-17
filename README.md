@@ -8,33 +8,45 @@ https://github.com/lukehoban/es6features
 
 # Background
 I needed to explain to someone how to build scalable api's in nodeJs.
+
 After searching the interwebs I was pretty surprised that there wasn't many articles about how to build clean, 
 scalable api's in node.js. Which has led to this.
 
 # Topics covered
-OOP in nodejs, database design, system architecture and microservices
+OOP in nodejs, database design, system architecture and microservices.
+
 Making sure your nodejs api is scalable. 
 
 # Problems I have seen in node.js api's
 
 # Monolithic structures 
 Problems with this can include but not limited to:
+
 No one wants to maintain it.
+
 It's hard to understand what is going on.
+
 They can be fragile.
+
 And usually one or two people know most of it and if they left the company, the company would be screwed.
 
 # Poorly treated databases
 A database is extremely important to maintain.
+
 Adding redundant tables and fields are detromental to building and maintaing a API. 
+
 This causes uncertainity with developers as to which fields and tables to use.
 
 # Sanity check your projects
 # Database questions
 `Are there redundancies?`
+
 `Is the api grabbing blobs of data from the same field?`
+
 `Is the database normalized?`
+
 `Does every table need each other in the database or could it be seperate?`
+
 `If you had to add 3-5 more tables would this be a problem? Would this be hard to address?`
 
 # Testing
