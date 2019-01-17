@@ -128,7 +128,7 @@ Also making debugging easier etc.
 
 # es8
 I love ECMAScript don't get me wrong but used with bad architecture it can get messy real quick.
-Here are some tools of ECMAScript you should be using right now, no excuses:
+Here are some tools of ECMAScript you should be using right now:
 # Classes
 ``class cat {
     constructor(height) 
