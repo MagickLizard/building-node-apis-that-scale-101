@@ -8,7 +8,8 @@ https://github.com/lukehoban/es6features
 
 # Background
 I needed to explain to someone how to build scalable api's in nodeJs.
-After searching the interwebs I was pretty surprised that there wasn't many articles about how to build clean, scalable api's in node.js. Which has led to this.
+After searching the interwebs I was pretty surprised that there wasn't many articles about how to build clean, 
+scalable api's in node.js. Which has led to this.
 
 # Topics covered
 OOP in nodejs, database design, system architecture and microservices
@@ -17,7 +18,7 @@ Making sure your nodejs api is scalable.
 # Problems I have seen in node.js api's
 
 # Monolithic structures 
-Problems with this can include but not limited too:
+Problems with this can include but not limited to:
 No one wants to maintain it.
 It's hard to understand what is going on.
 They can be fragile.
@@ -25,20 +26,22 @@ And usually one or two people know most of it and if they left the company, the 
 
 # Poorly treated databases
 A database is extremely important to maintain.
-Adding redundant tables and fields are detromental to building and maintaing a API. This causes uncertainity with developers as to which fields and tables to use.
+Adding redundant tables and fields are detromental to building and maintaing a API. 
+This causes uncertainity with developers as to which fields and tables to use.
 
 # Sanity check your projects
 # Database questions
-Are there redundancies?
-Is the api grabbing blobs of data from the same field?
-Is the database normalized?
-Does every table need each other in the database or could it be seperate?
-If you had to add 3-5 more tables would this be a problem? Would this be hard to address?
+`Are there redundancies?`
+`Is the api grabbing blobs of data from the same field?`
+`Is the database normalized?`
+`Does every table need each other in the database or could it be seperate?`
+`If you had to add 3-5 more tables would this be a problem? Would this be hard to address?`
 
 # Testing
-Are the tests actually useful?
-How is test coverage?
-Do you have HTTP mock tests, do you need them?
+`Are the tests actually useful?`
+`How is test coverage?`
+
+`Do you have HTTP mock tests, do you need them?`
 # TBC..
 # Key considerations
 Consider your programming roots of OOP and database design principles.
@@ -81,9 +84,9 @@ This could be done in a number of ways but for this tutorial we are doing it in 
 Cat will be isolation and will not need to change animal in multiple places.
 
 TODO: `add call to cat and add mysql stuff in`
-1. create a new nodejs project in isolation
-2. get old project to call new codebase.
-3. split new project into calls Json you will need in animal.
+1. `create a new nodejs project in isolation`
+2. `get old project to call new codebase.`
+3. `split new project into calls Json you will need in animal.`
 
 (mysql actions for catresult in json) could be split into npm package so when you need to make changes it, its in isolation and you are not having to change venue results in multiple locations.
 Also making debugging easier etc. 
