@@ -57,10 +57,9 @@ This causes uncertainity with developers as to which fields and tables to use.
 # TBC..
 # Key considerations
 Consider your programming roots of OOP and database design principles.
+#
+Some key practices for stopping these types of issues are from OOP, database design and system architecture. 
 
-
-# API
-When building api's make sure there is a source of truth for not just one item but for multiple items.
 Use OOP standards
 Inheritance, constructors, classes
   ``
@@ -81,14 +80,30 @@ Inheritance, constructors, classes
     module.exports =(new animal());
     
   ``
+Having a clean database/s with non-redundant fields and tables, having normalized database/s (otherwise different things can be calling different items and the data can be unclear where it is coming from and appear in different columns).
+
+When building api's make sure there is a source of truth for not just one item but for multiple items. 
+
+Building in micro services: has a lot of advantages to fixing problems like these.
+
+# What is a Microservice
+A microservice is a single self-contained unit which, together with many others, makes up a large application. By splitting your app into small units every part of it is independently deployable and scalable, can be written by different teams and in different programming languages and can be tested individually. — Max Stoiber
+
+
+Include making sure your code is scalable. 
+
+An example of this could be: cat (mysql actions + resulting in json) could be split into npm package so when you need to make changes it, it's in isolation and you are not having to change cat related items in multiple locations. 
+
+This also makes testings and debugging easier etc. 
+
+# API
+When building api's make sure there is a source of truth for not just one item but for multiple items.
+
   # Problem 
   
 If cat became a really big part of our codebase and dog was hardly used. It might be time to split cat and dog up. 
 Building in micro services has a lot of advantages to fixing problems like these.
   
-# What is a Microservice
-A microservice is a single self-contained unit which, together with many others, makes up a large application. By splitting your app into small units every part of it is independently deployable and scalable, can be written by different teams and in different programming languages and can be tested individually. — Max Stoiber
-
 
 This could be done in a number of ways but for this tutorial we are doing it in a npm package. (these can be public / private).
 
