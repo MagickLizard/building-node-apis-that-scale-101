@@ -13,7 +13,7 @@ After searching the interwebs I was pretty surprised that there wasn't many arti
 scalable api's in node.js. Which has led to this.
 
 # Topics covered
-OOP in nodejs, database design, system architecture and microservices what you shouldn't be doing.
+A refresher at OOP in NodeJs, database design, system architecture and microservices what you shouldn't be doing.
 Making sure your nodejs api is scalable with microservices. 
 
 # Monolithic structures 
@@ -53,6 +53,7 @@ This causes uncertainity with developers as to which fields and tables to use.
 `Do you have HTTP mock tests, do you need them?`
 `When building api's make sure there is a source of truth for not just one item but for multiple items.`
 # TBC..
+typescript
 # Key considerations
 Consider your programming roots of OOP and database design principles.
 #
