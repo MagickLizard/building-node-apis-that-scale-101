@@ -5,6 +5,7 @@ https://medium.com/@cramirez92/build-a-nodejs-cinema-microservice-and-deploying-
 https://blog.octo.com/en/clean-node-part-1/
 https://flaviocopes.com/es2018/
 https://github.com/lukehoban/es6features
+https://developer.okta.com/blog/2018/11/15/node-express-typescript
 
 # Background
 I needed to explain to someone how to build scalable api's in nodeJs.
