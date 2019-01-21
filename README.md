@@ -14,7 +14,7 @@ After searching the interwebs I was pretty surprised that there wasn't many arti
 scalable api's in node.js. Which has led to this.
 
 # Topics covered
-A refresher at OOP in NodeJs, database design, system architecture and microservices what you shouldn't be doing.
+A refresher at OOP in NodeJs, database design, system architecture, microservices, what you shouldn't be doing.
 Making sure your nodejs api is scalable with microservices. 
 
 # Monolithic structures 
